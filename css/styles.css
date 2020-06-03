@@ -1,0 +1,384 @@
+body {
+    background-color: white;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+    position: relative;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+nav li {
+    display: inline;
+    margin: 0 40px;
+}
+
+li a {
+    font-size: 1rem;
+    color: hsl(233, 8%, 62%);
+}
+
+li a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav .btn {
+    position: absolute;
+    right: 10%;
+}
+
+nav img {
+    position: absolute;
+    left: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav .btn:hover,
+.sx .btn:hover,
+.third .btn:hover {
+    background-color: hsl(136, 65%, 51%);
+}
+
+@media (max-width: 1210px) {
+    nav {
+        height: 15vh;
+    }
+
+    nav img {
+        top: 15vh;
+        left: 23%;
+    }
+
+    #home .btn {
+        top: 13.5vh;
+        right: 23%;
+    }
+}
+
+@media (max-width: 657px) {
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav img {
+        left: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav img {
+        display: none;
+    }
+
+    nav .btn {
+        right: 20%;
+        transform: translateX(-20%);
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: white;
+}
+
+.sx {
+    width: 50%;
+    height: 70vh;
+    text-align: left;
+    display: inline-block;
+}
+
+.txt-sx {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.txt-sx p {
+    width: 75%;
+    margin: 30px 0;
+}
+
+.txt-sx h1 {
+    width: 75%;
+}
+
+.dx {
+    width: 50%;
+    height: 70vh;
+    float: right;
+    background: url("../images/bg-intro-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dx img {
+    position: relative;
+    bottom: 120px;
+    left: 40px;
+    width: 100%;
+}
+
+@media (max-width: 1210px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    nav .btn {
+        top: 63px;
+    }
+
+    .sx {
+        order: 2;
+        display: block;
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    .dx {
+        order: 1;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dx img {
+        width: 80%;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .txt-sx {
+        text-align: center;
+    }
+
+    .sx .btn {
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 836px) {
+    .sx {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 590px) {
+    .sx {
+        margin-top: 5%;
+    }
+
+    .dx img {
+        width: 100%;
+    }
+}
+
+/* About */
+
+#about {
+    margin-top: 30vh;
+    width: 100%;
+    text-align: left;
+    background-color: hsl(220, 16%, 96%);
+}
+
+.content-about {
+    width: 40%;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.content-about p {
+    margin: 30px 0;
+}
+
+#about .container {
+    padding: 80px 0;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+@media (max-width: 1040px) {
+    .content-about {
+        width: 80%;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    .marg-col {
+        margin-top: 30px;
+    }
+
+    .content-about {
+        margin: 5% auto -5% auto;
+    }
+
+    .marg-col p {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Blog */
+
+#blog {
+    text-align: left;
+}
+
+#blog h1 {
+    margin: 100px 0 0 100px;
+}
+
+.card {
+    margin: 0 auto;
+    color: hsl(233, 8%, 62%);
+    margin-top: 40px;
+}
+
+.small-p {
+    font-size: .7rem;
+}
+
+.card-title {
+    color: black;
+    font-weight: bold;
+}
+
+.col-lg-6 {
+    margin: 0 auto;
+}
+
+@media (max-width: 1385px) and (min-width: 990px) {
+    #blog .container-fluid {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #blog h1 {
+        margin: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+/* Contacts */
+
+#contacts {
+    background-color: hsl(233, 26%, 24%);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.white-logo {
+    margin-top: 10px;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.starter {
+    text-align: left;
+}
+
+.links {
+    display: flex;
+}
+
+.icon-footer {
+    margin: 40px 15px 0 0;
+}
+
+
+.first-links,
+.second-links {
+    width: 50%;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.first-links ul li,
+.second-links ul li {
+    display: block;
+    margin-top: 10px;
+}
+
+#contacts a {
+    color: white;
+}
+
+.third {
+    text-align: right;
+}
+
+.third .btn {
+    margin-top: 10px;
+}
+
+.third p {
+    margin-top: 40px;
+    color: white;
+
+}
+
+@media (max-width:992px) {
+
+    .links,
+    .third {
+        text-align: center;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+    .starter {
+        text-align: center;
+    }
+
+    .first-links,
+    .second-links {
+        text-align: center;
+    }
+
+    .white-logo {
+        margin: 10px auto 0 auto;
+    }
+
+    #contacts ul {
+        margin-right: 50px;
+    }
+
+}
